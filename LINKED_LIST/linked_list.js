@@ -1,118 +1,118 @@
 class Node {
     constructor(value) {
-        this.value = value;
-        this.next = null;
+        this.value=value;
+        this.next=null;
     }
 }
 
 class LinkedList {
     constructor() {
-        this.head = null;
+        this.head=null;
     }
 
     addFirst(value) {
-        const newNode = new Node(value);
-        newNode.next = this.head;
-        this.head = newNode;
+        const newNode=new Node(value);
+        newNode.next=this.head;
+        this.head=newNode;
     }
 
     addLast(value) {
-        const newNode = new Node(value);
+        const newNode=new Node(value);
 
-        if (this.head === null) {
-            this.head = newNode;
+        if (this.head===null) {
+            this.head=newNode;
             return;
         }
 
-        let current = this.head;
+        let current=this.head;
 
-        while (current.next !== null) {
-            current = current.next;
+        while (current.next!==null) {
+            current=current.next;
         }
 
-        current.next = newNode;
+        current.next=newNode;
     }
 
     deleteFirst() {
-        if (this.head === null) {
+        if (this.head===null) {
             console.log("List is empty");
             return;
         }
 
-        this.head = this.head.next;
+        this.head=this.head.next;
     }
 
     deleteLast() {
-        if (this.head === null) {
+        if (this.head===null) {
             console.log("List is empty");
             return;
         }
 
-        if (this.head.next === null) {
-            this.head = null;
+        if (this.head.next===null) {
+            this.head=null;
             return;
         }
 
-        let current = this.head;
+        let current=this.head;
 
-        while (current.next.next !== null) {
-            current = current.next;
+        while (current.next.next!==null) {
+            current=current.next;
         }
 
-        current.next = null;
+        current.next=null;
     }
 
     print() {
-        let current = this.head;
-        let result = "";
+        let current=this.head;
+        let result="";
 
-        while (current !== null) {
-            result += current.value + " → ";
-            current = current.next;
+        while (current!==null) {
+            result+=current.value + " → ";
+            current=current.next;
         }
 
-        result += "null";
+        result+="null";
         console.log(result);
     }
 
     find(value) {
-        let current = this.head;
+        let current=this.head;
 
-        while (current !== null) {
-            if (current.value === value) {
+        while (current!==null) {
+            if (current.value===value) {
                 return true;
             }
 
-            current = current.next;
+            current=current.next;
         }
 
         return false;
     }
 
     delete(value) {
-        if (this.head === null) {
+        if (this.head===null) {
             return;
         }
 
-        if (this.head.value === value) {
-            this.head = this.head.next;
+        if (this.head.value===value) {
+            this.head=this.head.next;
             return;
         }
 
-        let current = this.head;
+        let current=this.head;
 
-        while (current.next !== null) {
-            if (current.next.value === value) {
-                current.next = current.next.next;
+        while (current.next!==null) {
+            if (current.next.value===value) {
+                current.next=current.next.next;
                 return;
             }
 
-            current = current.next;
+            current=current.next;
         }
     }
 }
 
-const list = new LinkedList();
+const list=new LinkedList();
 
 console.log("Empty list:");
 list.print();
