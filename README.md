@@ -1,6 +1,6 @@
 ## Linked List Assignment
 
-**Name: Virat Singh
+**Name: Virat Singh**
 
 **Assignment: Linked List Assignment**
 
