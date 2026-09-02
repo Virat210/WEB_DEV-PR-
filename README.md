@@ -11,7 +11,7 @@ Linked lists are useful because they allow fast insertions and deletions without
 
 ## Methods Implemented
 
-**Basic Methods:-**
+**Basic Methods:-
 
 addFirst(value):-
 Inserts a new node at the beginning of the list.
