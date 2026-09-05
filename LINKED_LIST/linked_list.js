@@ -43,7 +43,7 @@ class LinkedList {
     }
 
     deleteLast() {
-        if (this.head==null) {
+        if (this.head===null) {
             console.log("List is empty");
             return;
         }
