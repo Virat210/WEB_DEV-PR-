@@ -9,7 +9,7 @@ A linked list is a linear data structure made of nodes, where each node stores a
 The head represents the starting point of the list.
 Linked lists are useful because they allow fast insertions and deletions without shifting elements in memory.
 
-## Methods Implemented
+## Methods Implement
 
 **Basic Methods:-**
 
