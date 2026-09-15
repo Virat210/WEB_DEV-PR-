@@ -7,7 +7,7 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": tru,
+      "externalConsole": true,
       "cwd": "c:/Users/virat/OneDrive/Desktop/WEB_DEV(PR)",
       "program": "c:/Users/virat/OneDrive/Desktop/WEB_DEV(PR)/build/Debug/outDebug",
       "MIMode": "gdb",
